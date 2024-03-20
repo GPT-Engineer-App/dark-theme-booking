@@ -14,8 +14,8 @@ const Index = () => {
     <ChakraProvider theme={theme}>
       <Box bg="gray.800" minH="100vh" color="white">
         <Container maxW="container.lg" py={8}>
-          <HStack justify="space-between" mb={8}>
-            <Heading>My Website</Heading>
+          <HStack justify="space-between" mb={12}>
+            <Heading>OverTime Barber Studios</Heading>
             <HStack spacing={4}>
               <Link href="#home">Home</Link>
               <Link href="#book-now">Book Now</Link>
@@ -24,31 +24,16 @@ const Index = () => {
 
           <VStack spacing={12} align="stretch">
             <Box id="home">
-              <Heading size="xl" mb={4}>
-                Welcome to My Website
-              </Heading>
-              <HStack align="center" mb={4}>
-                <FaMapMarkerAlt />
-                <Text>4507 50th St Lubbock, TX 79414</Text>
-              </HStack>
-              <Image src="https://images.unsplash.com/photo-1577086664693-894d8405334a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBvZiUyMDQ1MDclMjA1MHRoJTIwU3QlMjBMdWJib2NrJTJDJTIwVFglMjA3OTQxNHxlbnwwfHx8fDE3MTA5MjQxOTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Location Map" maxW="400px" mx="auto" />
-            </Box>
-
-            <Box id="book-now">
-              <Heading size="xl" mb={4}>
-                Book an Appointment
-              </Heading>
-              <VStack spacing={4} align="start">
-                <Select placeholder="Select Staff">
-                  <option value="any-staff">Any staff</option>
-                  <option value="deeze-blendz">Deeze Blendz</option>
-                  <option value="finesse-the-barber">Finesse The Barber(Marcus)</option>
-                  <option value="its-bigga-boi">It's Bigga Boi The Barber</option>
-                  <option value="lukecuts">LukeCuts</option>
-                  <option value="murda-mace-kuts">Murda Mace Kuts</option>
-                  <option value="sayles-cuts">SayLes Cuts</option>
-                </Select>
-                <Button colorScheme="blue">Book Now</Button>
+              <VStack spacing={6} align="center">
+                <HStack align="center">
+                  <FaMapMarkerAlt />
+                  <Text>4507 50th St Lubbock, TX 79414</Text>
+                </HStack>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.9676802835686!2d-101.91431248480938!3d33.52021158075005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86fe12add37ddd6d%3A0x1af0c8e5b6b5d5a5!2s4507%2050th%20St%2C%20Lubbock%2C%20TX%2079414!5e0!3m2!1sen!2sus!4v1687285078576!5m2!1sen!2sus" width="100%" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+                <Image src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/289288799_2942350299242670_6537427976868939732_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yCLbCgWn1U8AX_W78Wu&_nc_ht=scontent-dfw5-1.xx&oh=00_AfCgjwGQbaf6X3MPN_oXG9nWE2_FcZV3ph7E2wvIhnnkCQ&oe=65FFC784" alt="OverTime Barber Studios" maxW="100%" mb={6} />
+                <Button as={Link} href="#book-now" colorScheme="blue">
+                  Book Now
+                </Button>
               </VStack>
             </Box>
           </VStack>
