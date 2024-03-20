@@ -39,18 +39,15 @@ const Index = () => {
                 Book an Appointment
               </Heading>
               <VStack spacing={4} align="start">
-                <Select placeholder="Select Service">
-                  <option value="service1">Service 1</option>
-                  <option value="service2">Service 2</option>
-                  <option value="service3">Service 3</option>
-                </Select>
                 <Select placeholder="Select Staff">
-                  <option value="staff1">Staff 1</option>
-                  <option value="staff2">Staff 2</option>
-                  <option value="staff3">Staff 3</option>
+                  <option value="any-staff">Any staff</option>
+                  <option value="deeze-blendz">Deeze Blendz</option>
+                  <option value="finesse-the-barber">Finesse The Barber(Marcus)</option>
+                  <option value="its-bigga-boi">It's Bigga Boi The Barber</option>
+                  <option value="lukecuts">LukeCuts</option>
+                  <option value="murda-mace-kuts">Murda Mace Kuts</option>
+                  <option value="sayles-cuts">SayLes Cuts</option>
                 </Select>
-                <input type="date" />
-                <input type="time" />
                 <Button colorScheme="blue">Book Now</Button>
               </VStack>
             </Box>
